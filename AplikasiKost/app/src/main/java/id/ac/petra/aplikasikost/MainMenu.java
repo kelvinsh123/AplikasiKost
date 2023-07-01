@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainMenu extends AppCompatActivity implements View.OnClickListener {
 
-    private Button listKendaraanButton;
+    private Button listKostButton;
     private Button bookingButton;
 
     @Override
@@ -17,10 +17,10 @@ public class MainMenu extends AppCompatActivity implements View.OnClickListener 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_menu);
 
-        listKendaraanButton = findViewById(R.id.listKostButton);
+        listKostButton = findViewById(R.id.listKostButton);
         bookingButton = findViewById(R.id.bookingButton);
 
-        listKendaraanButton.setOnClickListener(this);
+        listKostButton.setOnClickListener(this);
         bookingButton.setOnClickListener(this);
     }
 
